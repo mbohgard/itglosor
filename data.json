@@ -1,0 +1,86 @@
+{
+	"requested": [ "Symphony", "Wordpress", "Testning", "Use Case", "Adobe" ],
+
+	"words": [
+		{
+			"word": "AngularJS",
+			"desc": "Open source framework i JavaScript som är Apache byggt av Google. Det är AJAX ett av JavaScript-biblioteken i raden av nya frameworks för att bygga web-appar mer än traditionella hemsidor."
+		},
+		{
+			"word": "Microsoft Sharepoint",
+			"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		},
+		{
+			"word": "AJAX",
+			"desc": "Står för Asynchronous Javascript and xml Den vanligaste tekniken för programmering av webbsidor med interaktiva program. Ajax är en kombination av Javascript, xml och andra verktyg. Ajax ger webbsidor som direkt svarar på användarens inmatningar utan att webbläsaren behöver vänta på nya sidor från webbservern. Programmen följer nämligen med webbsidan efter anropet och körs på webbläsarens dator. – Ajax är ingen produkt eller varumärke utan ett namn som sammanfattar en kombination av verktyg."
+		},
+		{
+			"word": "Apache",
+			"desc": "Världens mest spridda webbserver sedan mitten av 1990-talet. 2008 drevs hälften av världens webbplatser med Apaches webbserver. Apache sprids med fri och öppen källkod och utvecklas av Apache Software Foundation."
+		},
+		{
+			"word": "Open Source",
+			"desc": "Programs källkod som lämnas ut tillsammans med programmet; principen att program alltid ska åtföljas av källkod. Syftet är att användaren ska kunna rätta fel och lägga till funktioner. Det är därför underförstått att det är tillåtet att ändra källkoden, kompilera den och att köra den ändrade versionen. Oftast har användaren fler rättigheter (kanske också skyldigheter), vilket framgår av programlicensen. Paradexemplet på öppen källkod är operativsystemet Linux.<br>När den engelska termen open source först användes är omstritt. Christine Peterson gör anspråk på att ha föreslagit termen 1998, men termen användes tidigare än så. Själva företeelsen är mycket äldre än så. I äldre datasystem - innan piratkopiering av program sågs som ett problem - var det självklart att kunden fick källkoden. En strikt form av öppen källkod är fri mjukvara. När man talar om fri mjukvara till skillnad från öppen källkod vill man betona användarnas frihet att använda programmet hur de vill, och att denna frihet inte får inskränkas. Det finns också arrangemang där kunden får tillgång till källkoden, men inte får ändra i den, så kallad delad källkod (shared source)."
+		},
+		{
+			"word": "JavaScript",
+			"desc": "Skriptspråk för program som ska kunna köras i webbläsare. Ska inte förväxlas med programspråket Java. Javascript används för att ge webbsidor föränderligt utseende och göra dem interaktiva med klickbara knappar och liknande. Utvecklat av Netscape och lanserat 1995. Skulle ha hetat Livescript men fick namnet Javascript vid lanseringen, som skedde i samarbete med Sun. Resultatet blev tyvärr sammanblandningar av Javascript och Java. Microsoft lanserade senare en variant med namnet Jscript."
+		},
+		{
+			"word": "Array",
+			"desc": "I programmering: vektor, lista, uppställning – minnesutrymme som består av flera lika stora, numrerade minnesplatser. Man kan alltså lagra en serie värden i en bestämd ordning. En array kan vara enradig (en lista), tvådimensionell (en matris) eller, i sällsynta fall, en flerdimensionell matris."
+		},
+		{
+			"word": "Brandvägg",
+			"pointer": "Firewall"
+		},
+		{
+			"word": "Python",
+			"desc": "Programspråk för objektorienterad programmering. Det är ett interpreterat språk, så programmen kan köras utan ändringar på många olika typer av datorer och operativsystem. Python är skrivet i öppen källkod. Det används ofta som skriptspråk, men också som \"klister\" mellan olika program och för utveckling av grafiska användargränssnitt. Jython är en version av Python för Javabaserade system. Python har en officiell webbsida på python.org."
+		},
+		{
+			"word": "Firewall",
+			"desc": "Program som skyddar datornät eller enskilda datorer från intrång och sabotage via internet. Brandväggar granskar inkommande meddelanden enligt enkla regler och stoppar allt som strider mot reglerna. De kan också granska utgående trafik."
+		},
+		{
+			"word": "Öppen Källkod",
+			"pointer": "Open Source"
+		},
+		{
+			"word": "CSS",
+			"desc": "Står för Cascading Style Sheets. I dessa mallar definieras hur innehåll ska presenteras. Färger, typsnitt och var text och bilder ska visas på sidan anges via kod i css-filerna. Man kan till exempel ha samma webbsida med en vanlig mall, en mall för besökare med synsvårigheter och en tredje mall som passar för handhållna apparater med små bildskärmar. Detta är relativt enkelt därför att mallarna är separata filer som inte ingår i webbsidans HTML-kod."
+		},
+		{
+			"word": "Cascading Style Sheets",
+			"pointer": "CSS"
+		},
+		{
+			"word": "HTML",
+			"desc": "Står för Hypertext Markup Language. Det språk som används för att skriva webbsidor. Textens och sidans utformning, liksom länkar till andra webbsidor, anges med enkla koder, taggar, som blir osynliga för användaren när man tar upp sidan i en webbläsare. Version 5 av html, html5, är en radikal omarbetning."
+		},
+		{
+			"word": "HTML5",
+			"desc": "Radikal omarbetning av html som klarar rörliga bilder och ljud utan tilläggsprogram som Flash. Html5 har varit under arbete sedan 2004 och väntas bli godkänt av webbens ledningsgrupp W3C 2014. Delar av HTML5 togs i bruk 2010."
+		},
+		{
+			"word": "Adobe Flash",
+			"desc": "Adobe Flash, tidigare Macromedia Flash är ett program för rörliga bilder och interaktiv grafik som ska visas i webbläsare. Flash var länge det vanligaste formatet för animerad video på webben och det har nästan varit nödvändigt att ha insticksprogrammet Adobe Flash Player installerat i webbläsare. Det är gratis. Animerad video i Flashformat framställs med Adobe Flash Professional, som inte är gratis. Filformatet för Flash heter swf."
+		},
+		{
+			"word": "Flash",
+			"pointer": "Adobe Flash"
+		},
+		{
+			"word": "Router",
+			"pointer": "Firewall"
+		},
+		{
+			"word": "Källkod",
+			"pointer": "Source Code"
+		},
+		{
+			"word": "Source Code",
+			"desc": "Text som är skriven i programspråk och utgör ett datorprogram (eller del av ett datorprogram). Källkoden består av de instruktioner som programmet ska utföra när det används. (Källkod brukar också innehålla kommentarer från programmerare, avsedd för mänskliga läsare.) Den är skriven i ett programspråk för att den ska vara läsbar och begriplig för människor med vissa förkunskaper. Innan programmet kan köras i dator måste källkoden omvandlas till något som datorns processor förstår. Det görs oftast i förväg genom att källkoden kompileras till binärkod. Program som är skrivna i så kallade interpreterade språk kan köras utan kompilering. En programtolk översätter källkoden till binärkod under körningen. Även koden till en webbsida, skriven i html eller xml, är källkod."
+		}
+	]
+}

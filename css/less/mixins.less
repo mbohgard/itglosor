@@ -1,0 +1,68 @@
+.transition(...) {
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+
+.basic-transition(@time: .25s) {
+	.transition(all @time cubic-bezier(0.365, 0.160, 0.165, 1.000));
+}
+
+.transform(...) {
+	-webkit-transform: @arguments;
+	-moz-transform: @arguments;
+	-o-transform: @arguments;
+	-ms-transform: @arguments;
+	transform: @arguments;
+}
+
+.rounded(@radius: 2px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.box-shadow(@arguments) {
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	box-shadow: @arguments;
+}
+
+.gradient(@color: #F5F5F5, @stop: #EEE, @start: #FFF) {
+	background: @color;
+	background: -webkit-gradient(linear,
+							left bottom,
+							left top,
+							color-stop(0, @start),
+							color-stop(1, @stop));
+	background: -ms-linear-gradient(bottom,
+							@start,
+							@stop);
+	background: -moz-linear-gradient(center bottom,
+							@start 0%,
+							@stop 100%);
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+.gradient-vertical(@color: #F5F5F5, @stop: #EEE, @start: #FFF) {
+	background: @color;
+	background: -webkit-gradient(linear,
+							left top,
+							right top,
+							color-stop(0, @start),
+							color-stop(1, @stop));
+	background: -ms-linear-gradient(left,
+							@start,
+							@stop);
+	background: -moz-linear-gradient(center left,
+							@start 0%,
+							@stop 100%);
+	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@stop,@start));
+}
+
+.animation (@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	-ms-animation: @arguments;
+}

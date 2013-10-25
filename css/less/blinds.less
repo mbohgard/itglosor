@@ -1,0 +1,60 @@
+.blinds {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 199;
+
+	&.remove {
+		pointer-events: none;
+
+		&:before, &:after {
+			height: 0;
+			opacity: 0;
+		}
+	}
+
+	&:before, &:after {
+		position: fixed;
+		display: block;
+		content: ' ';
+		width: 100%;
+		height: 50%;
+		background: #333;
+		.basic-transition(1s);
+	}
+
+	&:before {
+		top: 0;
+	}
+
+	&:after {
+		bottom: 0;
+	}
+}
+
+.blinds-progress {
+	position: fixed;
+	width: 0;
+	top: 50%;
+	left: 0;
+	height: 1px;
+	background: darken(@background-color, 15%);
+	.box-shadow(0 0 13px 1px rgba(255,255,255,.2));
+	.basic-transition(.25s);
+	z-index: 200;
+
+	&:after {
+		position: fixed;
+		content: 'Laddar...';
+		width: 100%;
+		text-align: center;
+		padding-top: 5px;
+		top: 50%;
+		font-size: 8px;
+		color: @background-color;
+		text-shadow: 0 0 5px @base-color;
+		text-transform: uppercase;
+	}
+}

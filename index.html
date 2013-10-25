@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.min.css">
+
+		<script src="js/lib/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div id="topbar">
+			<header class="header">
+				<div class="header-content full-width clearfix">
+					<h1 class="page-title">IT för vanliga människor</h1>
+
+					<nav class="header-nav">
+						<ul>
+							<li><a href="#om">Om</a></li>
+							<li><a href="#cookies">Cookies</a></li>
+							<li><a href="#kontakt">Kontakt</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div class="hidden-info">
+				<div class="hidden-info-wrapper clearfix">
+					<div id="om" class="hidden-info-section">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eveniet accusamus aliquam alias aliquid fugit fuga omnis. Ea, perspiciatis, quaerat, accusamus nesciunt libero maiores reprehenderit sequi ipsa iste et harum.<br />
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eveniet accusamus aliquam alias aliquid fugit fuga omnis. Ea, perspiciatis, quaerat, accusamus nesciunt libero maiores reprehenderit sequi ipsa iste et harum.
+					</div>
+					<div id="cookies" class="hidden-info-section">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, similique, consequatur, ratione, repudiandae odio iusto natus quod quo nesciunt maiores architecto eaque a explicabo eveniet ad debitis suscipit dicta eos.
+					</div>
+					<div id="kontakt" class="hidden-info-section">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quasi dolore ex sapiente ipsum adipisci velit expedita reprehenderit libero aspernatur repellendus ducimus aut ipsa non minus praesentium ad temporibus voluptate.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="main-nav full-width fixed">
+			<ul class="less-width clearfix">
+				<li><a href="#search/" class="btn search green" id="search">Sök efter ord</a></li>
+				<li><a href="#request/" class="btn question red" id="request">Begär förklaring</a></li>
+				<li><a href="#contribute/" class="btn bubble blue brick is-not-initialized" id="contribute" data-brick="0">Förklara ett ord</a></li>
+			</ul>
+		</nav>
+
+		<div class="big-input-wrapper full-width fixed">
+			<div class="big-input less-width">
+				<div class="big-input-labels">
+					<label for="mainInput" class="search">Hitta ord:</label><br>
+					<label for="mainInput" class="request">Begär förklaring på ord:</label>
+				</div>
+
+				<input type="text" id="mainInput" />
+
+				<a href="#" class="enter-sign" title="Press Enter to request this word"><i class="icon-level-down"></i></a>
+			</div>
+		</div>
+
+		<a href="#search/" class="search-back full-width fixed"><i class="icon-chevron-left"></i>Tillbaka</a>
+
+		<div class="pages-container full-width">
+			<div class="page word-list">
+				<ul>
+					<li class="template">
+						<div class="word"></div>
+						<div class="word-desc">
+							<p>
+								<span class="pointer" data-title="Ord med samma betydelse: "></span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page request-info">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis at praesentium ea laborum officiis in voluptatibus. Placeat, optio, adipisci, deleniti est voluptatum doloremque odit sed maxime commodi veniam sapiente accusantium.
+
+				<h4>Ord som väntar på förklaring:</h4>
+				<ul>
+					<li class="template"></li>
+				</ul>
+			</div>
+
+			<div class="page contribute">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, mollitia, vel, dolores odit possimus atque nihil sit fugit quae iusto suscipit a cumque cum cupiditate voluptates? Nulla, quam praesentium earum.
+
+				<h4>Förklara något av orden nedan:</h4>
+				<ul class="clearfix">
+					<li class="template">
+						<a href="#" class="explain-word is-hidden"></a>
+					</li>
+				</ul>
+
+				<div class="popup explain-word template">
+					<a href="#" class="close-button"><i class="icon-remove"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="blinds">
+			<div class="blinds-progress"></div>
+		</div>
+
+		<script src="js/lib/require.js" data-main="js/app.js"></script>
+
+		<script>
+			/*var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));*/
+		</script>
+
+	</body>
+</html>

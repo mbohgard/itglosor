@@ -1,0 +1,88 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.serif {
+	font-family: @base-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: @background-color;
+	font: @base-font;
+	color: @base-color;
+	margin-top: 190px;
+	overflow-y: scroll;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: @header-color;
+}
+
+h4, h5, h6 {
+	text-transform: uppercase;
+	font-size: 10px;
+	font: @base-font;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+.full-width, .less-width {
+	width: @max-width;
+	margin: auto;
+}
+
+.less-width {
+	width: @less-width;
+}
+
+.fixed {
+	position: fixed;
+	left: 50%;
+	z-index: 1;
+
+	&.full-width {
+		margin-left: -(@max-width/2);
+	}
+
+	&.less-width {
+		margin-left: -(@less-width/2);
+	}
+}
+
+.pages-container {
+	position: relative;
+}
+
+.page {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	font-family: @base-serif;
+	font-size: 16px;
+	line-height: 22px;
+	.transform(translate(0,-20px));
+	.basic-transition(.5s);
+
+	&.is-active {
+		.transform(translate(0,0));
+		opacity: 1;
+	}
+}
+
+.template {
+	display: none !important;
+}
