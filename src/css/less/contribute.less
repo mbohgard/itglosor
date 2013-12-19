@@ -83,14 +83,17 @@
 	}
 
 	&.is-expanded {
-		width: 500px !important;
-		height: 200px !important;
+		width: 650px !important;
+		height: 350px !important;
 		top: 50% !important;
 		left: 50% !important;
-		margin-top: -200px;
-		margin-left: -250px;
+		margin-top: -180px;
+		margin-left: -325px;
 		background: @popup-background;
-		.box-shadow(1px 1px 5px -1px rgba(0,0,0,.1));
+		.box-shadow(~'1px 1px 15px -4px rgba(0,0,0,.3), inset 1px 1px 0 white');
+		border: none;
+		padding: 10px;
+		z-index: 1;
 
 		.close-button {
 			opacity: 1;
