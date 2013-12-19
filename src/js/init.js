@@ -6,7 +6,7 @@ requirejs.config({
         lib: 'src/js/lib'
     },
     shim: {
-        'plugins': ['lib/jquery']
+        'app/plugins': ['lib/jquery']
     }
 });
 
