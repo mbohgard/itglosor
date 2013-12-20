@@ -14,6 +14,21 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      dev: {
+        files: [
+          { expand: true, cwd: 'src/font/', src: ['**'], dest: 'dev-build/font/', flatten: true },
+          { expand: true, cwd: 'src/', src: ['*'], dest: 'dev-build/', flatten: true, filter: 'isFile' }
+        ]
+      },
+      deploy: {
+        files: [
+          { expand: true, cwd: 'src/font/', src: ['**'], dest: 'deploy/font/', flatten: true },
+          { expand: true, cwd: 'src/', src: ['*'], dest: 'deploy/', flatten: true, filter: 'isFile' }
+        ]
+      }
+    },
+
     uglify: {
       dev: {
         options: {
@@ -36,7 +51,7 @@ module.exports = function(grunt) {
         paths: {
           requireLib: 'lib/require'
         },
-        name: 'main',
+        name: 'init',
         include: 'requireLib'
       },
       dev: {
@@ -114,6 +129,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-devserver');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-less');
@@ -122,12 +138,12 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dev', function() {
     grunt.log.write('Building to dev-build and starts listening for changes...');
-    grunt.task.run(['uglify:dev', 'requirejs:dev', 'less:dev', 'htmlmin:dev', 'devserver', 'watch']);
+    grunt.task.run(['copy:dev', 'uglify:dev', 'requirejs:dev', 'less:dev', 'htmlmin:dev', 'devserver', 'watch']);
   });
 
   grunt.registerTask('deploy', function() {
     grunt.log.write('Building to deploy directory...');
-    grunt.task.run(['uglify:deploy', 'requirejs:deploy', 'less:deploy', 'htmlmin:deploy']);
+    grunt.task.run(['copy:deploy', 'uglify:deploy', 'requirejs:deploy', 'less:deploy', 'htmlmin:deploy']);
   });
 
   grunt.registerTask('default', 'Message', function() {
