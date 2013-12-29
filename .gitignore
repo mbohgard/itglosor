@@ -1,8 +1,8 @@
 .DS_Store
 node_modules
-bower_components
-deploy/*
-dev-build/*
+client/bower_components
+client/deploy/*
+client/dev-build/*
 
 # don't ignore
 !.keep

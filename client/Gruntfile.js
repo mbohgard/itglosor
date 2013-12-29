@@ -1,18 +1,9 @@
 module.exports = function(grunt) {
+  'use strict';
 
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
-
-    devserver: {
-      server: {},
-      options: {
-        'port' : 8080,
-        'base' : 'dev-build/',
-        'cache' : 'no-cache',
-        'async' : false
-      }
-    },
 
     copy: {
       dev: {
@@ -128,7 +119,6 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-devserver');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
@@ -138,7 +128,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dev', function() {
     grunt.log.write('Building to dev-build and starts listening for changes...');
-    grunt.task.run(['copy:dev', 'uglify:dev', 'requirejs:dev', 'less:dev', 'htmlmin:dev', 'devserver', 'watch']);
+    grunt.task.run(['copy:dev', 'uglify:dev', 'requirejs:dev', 'less:dev', 'htmlmin:dev', 'watch']);
   });
 
   grunt.registerTask('deploy', function() {

@@ -1,0 +1,8 @@
+{
+  "name": "itglosor-server",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "3.4.3",
+    "ejs": "~0.8.5"
+  }
+}
